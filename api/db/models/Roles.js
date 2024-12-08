@@ -5,7 +5,7 @@ const schema = mongoose.Schema({
     role_name:{type:String, required:true},
     is_active:{type:Boolean, default:true},
     created_by:{
-        type:mongoose.SchemaType.ObjectId,
+        type:mongoose.Schema.Types.ObjectId,
         required:true
     }
 },{
